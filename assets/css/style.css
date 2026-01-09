@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'SORA', sans-serif;
 }
 
 :root{
@@ -43,3 +44,6 @@ p{
     margin: 0;
 }
 
+.about p{
+    font-weight: 200;
+}
