@@ -17,8 +17,9 @@ body{
 }
 
 hr{
+    color: var(--secondary);
     width: 1100px;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 h1, h2{
@@ -33,6 +34,40 @@ p{
     color: var(--white);
 }
 
+.btn{
+    border: 1px solid var(--white);
+    padding: 10px 50px;
+    border-radius: 25px;
+    color: var(--white);
+    margin: 32px 0 50px;
+}
+
+.btn:hover{
+    background-color: var(--secondary);
+}
+
+
+
+/**----------------------------------------------------------------*/
+.hero{
+    max-width: 1100px;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1{
+    margin: 0;
+    font-size: 48px;
+}
+
+.hero h2{
+    margin: 16px 0 0;
+    font-size: 24px;
+}
+
+/**---------------------------------------------------------------*/
 .about {
     max-width: 1100px;
     margin: 0 auto;
