@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'SORA', sans-serif;
 }
 
 :root{
@@ -78,3 +79,35 @@ p{
     margin: 0;
 }
 
+.about p{
+    font-weight: 200;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.first-row,
+.second-row,
+.third-row {
+  display: flex;
+  gap: 20px;
+}
+
+.gallery-item {
+  flex: 1;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
