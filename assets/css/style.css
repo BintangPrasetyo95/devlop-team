@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'SORA', sans-serif;
 }
@@ -12,7 +13,14 @@
     --h2: #cdcdcd;
     --btnhover: #8e8e8e;
 
-    --text-heading: 40px;
+    --text-heading: 4.8rem;
+    --text-subheading: 2.4rem;
+    --text-small-subheading: 1.6rem;
+
+}
+
+html{
+    font-size: 62.5%; /**sama aja 10px, tapi ini biar bisa make rem dan mudah buat responsive*/
 }
 
 body{
@@ -22,8 +30,8 @@ body{
 hr{
     color: var(--secondary);
     max-width: 1000px;
-    width: 100%;
-    margin: 100px auto;
+    width: 90%;
+    margin: 10rem auto;
 }
 
 h1, h2{
@@ -40,8 +48,8 @@ p{
 
 .btn{
     border: 1px solid var(--white);
-    padding: 10px 50px;
-    border-radius: 25px;
+    padding: 1rem 5rem;
+    border-radius: 999px;
     color: var(--secondary);
     background-color: var(--white);
     font-size: 16px;
@@ -58,9 +66,9 @@ p{
 /**----------------------------------------------------------------*/
 .hero{
     max-width: 1200px;
-    width: 100%;
-    height: 700px;
-    margin: 0px auto;
+    width: 90%;
+    padding: 25rem 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,12 +78,12 @@ p{
 
 .hero h1{
     margin: 0;
-    font-size: 48px;
+    font-size: 4.8rem;
 }
 
 .hero h2{
     color: var(--h2);
-    margin: 8px 0 20px;
+    margin: 0.8rem 0 2rem;
     font-size: 20px;
 }
 
@@ -83,7 +91,7 @@ p{
 .about {
     max-width: 700px;
     padding: 0 50px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -93,9 +101,12 @@ p{
 }
 
 .about p{
+    font-size: 1.2rem;
     font-weight: 200;
 }
 
+
+/**-------------------------gallery---------------------------------*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -104,14 +115,14 @@ p{
 .gallery-grid {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .first-row,
 .second-row,
 .third-row {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .gallery-item {
@@ -123,4 +134,64 @@ p{
   width: 100%;
   height: auto;
   display: block;
+}
+
+/**------------------------------team---------------------------------*/
+#team{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.team-header h2{
+    font-size: var(--text-subheading);
+    margin-bottom: 4rem;
+}
+
+.member-container{
+    padding: 0 0 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    row-gap: 8rem;
+}
+
+.member-profile-description{
+    width: 90%;
+    background-color: var(--secondary);
+    display:flex;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 40px;
+    transition: padding-bottom 0.3s ease;
+    box-shadow: 1px 1px 5px rgb(9, 9, 9);
+}
+
+.member-profile-description img{
+    margin: auto 0;
+    width: 90%;
+    max-width: 200px;
+    border-radius: 20px;
+}
+
+.member-description h4{
+    font-size: var(--text-small-subheading);
+    color: var(--white);
+    margin: 1.2rem 0 0.4rem;
+}
+
+.member-description p{
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.see-more{
+    color: rgb(30, 162, 238);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.see-more:hover{
+    color: rgb(23, 123, 181);
 }
