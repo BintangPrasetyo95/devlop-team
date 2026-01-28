@@ -7,7 +7,7 @@
 }
 
 :root{
-    --primary: #232526;
+    --primary: #00040f;
     --secondary: #414345;
     --white: #fff;
     --h2: #cdcdcd;
@@ -38,6 +38,7 @@ h1, h2{
     line-height: 1.2;
     font-weight: 300;
     color: var(--white);
+    text-shadow: #fff 0px 0px 10px;
 }
 
 p{
@@ -53,12 +54,14 @@ p{
     color: var(--secondary);
     background-color: var(--white);
     font-size: 16px;
+    box-shadow: #fff 0px 0px 8px;
+    transition: ease 0.5s;
 }
 
 .btn:hover{
-    background-color: var(--btnhover);
+    background-color: var(--primary);
     color: var(--white);
-    transition: ease 0.2s;
+    transition: ease 0.5s;
 }
 
 
@@ -74,17 +77,20 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 90vh;
 }
 
 .hero h1{
     margin: 0;
     font-size: 4.8rem;
+    text-shadow: #fff 0px 0px 10px;
 }
 
 .hero h2{
     color: var(--h2);
     margin: 0.8rem 0 2rem;
     font-size: 20px;
+    text-shadow: #fff 0px 0px 8px;
 }
 
 /**---------------------------------------------------------------*/
